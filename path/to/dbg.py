@@ -11,7 +11,6 @@ class Img_Sub(Node):
 
     super().__init__('img_sub')
     self.subscription = self.create_subscription(Image, 'traffic_light_image_in', self.listener_callback, 10)
-    self.subscription = self.create_subscription(int, 'traffic_light_recognition_result', self.listener_callback, 10)
     self.subscription 
       
     self.br = CvBridge()
